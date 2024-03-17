@@ -1,0 +1,306 @@
+
+
+
+/*body{
+    font-family: monospace;
+
+}
+nav{
+    background: white;
+    height:80px;
+    width: 100%;
+
+}
+.logo
+{
+color:rgb(0, 0, 0);
+font-size: 35px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+.checkbtn
+{
+    font-size:30px;
+    color:rgb(0, 0, 0);
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+}*/
+.sample
+{
+  color:rgb(71, 71, 71);
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    
+  }
+  .navcon
+  {
+   
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index:5;
+    background: transparent;
+    overflow-y: hidden;
+    display: flex;justify-content: center;
+    align-items: center;
+    
+  }
+  .navconhei
+  {
+    height: 140px;
+  }
+  .loogoo
+  {
+    width:650px;
+    height:120px;
+    overflow-y: hidden;
+    margin-left:-10%;
+    margin-top: 10px;
+  }
+  nav{
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    font-family: "Fredoka", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a.active,a:hover{
+    text-decoration: underline 2px rgb(31, 31, 117);
+    transition: .5s;
+    color: rgb(0, 0, 0);
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: rgb(31, 31, 117);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+/***************************************slide**************************************/
+.slidediv
+{
+    height:20%;
+    margin-top:20px;
+    z-index: 1;
+    height: 20%;
+}
+  .down
+  {
+    color:rgb(21, 21, 83);
+    font-size: 60px;
+    
+  }
+
+  #fading
+  {
+    display:flex;
+    flex-direction:row;
+    margin-top:-35%;
+    padding-left:40px;
+  }
+/**888888888888888888888888888888888888888888images88888888888888888888888888888888888888888888888*/
+.logos{
+
+margin-top:-48%;
+z-index: 3;
+}
+  @media (max-width: 1380px){
+    .navconhei
+    {
+      height: 100px;
+    }
+    .checkbtn{
+      display: block;
+      z-index: 2;
+      margin-top: 20px;
+      font-size: 40px;
+    }
+    .loogoo{
+      margin-top: 10px;
+      width:94%;
+      height:85px;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:rgb(31, 31, 117);
+      
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      display: inline-block;
+      z-index: 3;
+    }
+    nav ul li{
+    
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+        color:white;
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+    color:white;
+      
+     text-decoration: underline white 2px;
+    }
+    .logos{
+
+      margin-top:-58%;
+      z-index: 3;
+      }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  @media (max-width:820px){
+    .navconhei
+    {
+      height: 110px;
+    }
+    .logos{
+
+      margin-top:-90%;
+      z-index: 3;
+      }
+    .loogoo{
+        width:400px;
+        height:80px;
+        margin-top: 14px;
+        margin-left:15px;
+    }
+    .slidediv
+    {
+        margin-top:-70px;
+    }
+    #fading
+    {
+      margin-top:-20%;
+    }
+  }
+  @media (max-width:700px){
+    .slidediv{
+      margin-top: -20px;
+    }
+    .loogoo{
+        
+        margin-top:15px;
+        margin-left:-10px;
+    }
+    .logos{
+
+      margin-top:-100%;
+      z-index: 3;
+      }
+    .checkbtn
+    {
+        font-size: 35px;
+    }
+  }
+  
+    .slideshow
+    {
+        margin-top: -10px;
+    }
+  
+  @media (max-width:650px){
+    .loogoo{
+      height:80px;
+      width:400px;
+        margin-top:15px;
+        margin-left:-10px;
+    }
+    .slidediv{
+      margin-top: -0px;
+    }
+  }
+  
+  
+  @media (max-width:500px){
+    .loogoo{
+      height:50px;
+      width:250px;
+        margin-top:-170px;
+        margin-left:-10px;
+    }
+    .checkbtn
+    {
+        font-size: 30px;
+    }
+  }
+
+  
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
