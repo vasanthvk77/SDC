@@ -87,3 +87,10 @@ margin-top: 10px;
         margin-left: -20px;
     }
 }
+@media (max-width:420px){
+  .silicone_logo{
+      width:60%;
+      height:50px;
+      margin-left: -20px;
+  }
+}
